@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Editor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic&family=Noto+Serif&family=Quicksand&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/all.min.css">
+
+</head>
+
+<body>
+    <section>
+        <div class="div1">
+            <div class="div2">
+                <div class="div3">
+                    <div class="inputs">
+                    <input type="text" placeholder="Filename" value="untitled">
+                    <label>
+                        <select class="select">
+                            <option value="0">New File</option>
+                            <option value="1">Save as TXT</option>
+                            <option value="2">Save as PDF</option>
+                        </select>
+                    </label>
+                    <label>
+                        <select class="select">
+                            <option value="0">Arial</option>
+                            <option value="1">Verdana</option>
+                            <option value="2">Tahoma</option>
+                            <option value="3">Trebuchet</option>
+                        </select>
+                    </label>
+                    <input id="font-size" type="number" value="16" min="10" max="100">
+                        <input type="text" placeholder="Old Word">
+                        <input type="text" placeholder="New Word">
+                        <button type="button" id="Replace"><i class="fa-solid fa-rotate"></i></button>
+                    </label>
+                    </div>
+                    <div class="buttons">
+                        <button type="button"><i class="fa-solid fa-arrow-left"></i>
+                        </button>
+                        <button type="button"><i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                        <button type="button"><i class="fa-solid fa-bold"></i>
+                        </button>
+                        <button type="button"><i class="fa-solid fa-italic"></i>
+                        </button>
+                        <button type="button"><i class="fa-solid fa-align-left"></i>
+                        </button>
+                        <button type="button"><i class="fa-solid fa-align-center"></i>
+                        </button>
+                        <button type="button"><i class="fa-solid fa-align-right"></i>
+                        </button>
+                        <button type="button"><i class="fa-solid fa-list-ol"></i>
+                        </button>
+                        <button type="button"><i class="fa-solid fa-list-ul"></i>
+                        </button>
+                        <button type="button"><i class="fa-solid fa-underline"></i>
+                        </button>
+                        <button type="button"><i class="fa-solid fa-link"></i>
+                        </button>
+                        <button type="button"><i class="fa-solid fa-link-slash"></i>
+                        </button>
+                        <label>
+                            <input type="color">
+                        </label>
+                    </div>
+                    <!-- <label>
+                    background
+                    <input type="color">
+                </label> -->
+                    <br>
+                    <!-- contenteditable للتعديل على النص -->
+                    <!-- spellcheck للتأكد من الأخطاء الاملائية -->
+                </div>
+                <div class="text">
+                    <TEXtarea placeholder="Type Here..."></TEXtarea>
+                </div>
+            </div>
+            <div>
+                <button type="button" id="Calc">Words Count</button>
+                <button type="button" id="Calc">letters Count</button>
+            </div>
+    </section>
+
+</body>
+
+</html>
